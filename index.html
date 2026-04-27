@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Friendly textbooks and resources.">
+        <title>🟧 Module 8 - Events: Lesson 08. Form Submission and FormData Object</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="data:,">
+        <script defer src="../js/script.js"></script>
+    </head>
+    <body id="container">
+        <!-- HEADER -->
+        <header id="header">
+            <!-- NAV -->
+            <nav class="nav" aria-label="Primary navigation">
+                <a class="logo" href="#hero">EOUS</a>
+                
+                <ul class="nav-links">
+                    <li><a class="nav-item" href="#blog">Blog</a></li>
+                    <li><a class="nav-item" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-item" href="#faq">F. A. Q.</a></li>
+                </ul>
+                
+                <a class="signin" href="#">Sign in</a>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main id="main">
+            <!-- HERO -->
+            <section id="lessonSeven" class="key-inspector-section">
+                <h1 id="events">🟧 Lesson 07. Input Events</h1>
+                <div class="grid layout">
+                    <article class="card">
+                        <h2 class="title">Live Character Counter</h2>
+                        <input type="text" id="textInput" placeholder="Type something  . . ." />
+                        <p id="charCount">Characters: 0</p>
+                        <button type="button" id="updateBtn">Reset</button>
+                    </article>
+                    <article class="card">
+                        <h2 class="title">Live Input Validation</h2>
+                        <input type="text" id="usernameInput" placeholder="Enter username" />
+                        <p id="validationMessage">Waiting for input . . .</p>
+                        <button type="button" id="validateBtn">Validate</button>
+                    </article>
+                    <article class="card">
+                        <h2 class="title">Password Strength Checker</h2>
+                        <input type="password" id="passwordInput" placeholder="Enter password" />
+                        <!-- <p id="passwordMessage">Enter a password</p> -->
+                        <div class="strength-bar">
+                            <div id="strengthFill"></div>
+                        </div>
+                        <p id="passwordMessage"></p>
+                        <button type="button" id="checkBtn">Check</button>
+                    </article>
+                    <article class="card">
+                        <h2 class="title">Password Validator</h2>
+                        <input type="password" id="password" placeholder="Enter password" />
+                        <input type="password" id="confirmPassword" placeholder="Confirm password" />
+                        <p id="matchMessage"></p>
+                        <button type="button" id="confirmBtn">Confirm</button>
+                    </article>
+                </div>
+            </section>
+            <section id="lessonEight" class="lesson">
+                <h1 id="events">🟧 Lesson 08. Form Submission and FormData Object</h1>
+                <div class="grid layout">
+                    <article class="card">
+                        <h2 class="title">Form Logger</h2>
+                        <form id="myForm">
+                            <input type="text" name="username" placeholder="Enter name"/>
+                            <input type="email" name="email" placeholder="Enter email"/>
+                            <input type="checkbox" name="skills" value="JS" /> JS
+                            <input type="checkbox" name="skills" value="HTML" /> HTML
+                            <input type="checkbox" name="skills" value="CSS" /> CSS
+                            <button type="submit" class="submitBtn">Log</button>
+                        </form>
+                    </article>
+                    <article class="card">
+                        <h2 class="title">Mini Challenge</h2>
+                        <form id="newForm">
+                            <input type="text" name="username" placeholder="Name"/>
+                            <input type="email" name="email" placeholder="Email"/>
+                            <input type="checkbox" name="skills" value="HTML" /> HTML
+                            <input type="checkbox" name="skills" value="JS" /> JS
+                            <button type="submit" class="submitBtn">Submit</button>
+                        </form>
+                    </article>
+                    <article class="card">
+                        <h2 class="title">Form Alert</h2>
+                        <form id="updatedForm">
+                            <input type="text" name="username" placeholder="Name"/>
+                            <p class="error" id="usernameError"></p>
+
+                            <input type="email" name="email" placeholder="Email"/>
+                            <p class="error" id="emailError"></p>
+
+                            <input type="checkbox" name="skills" value="HTML" /> HTML
+                            <input type="checkbox" name="skills" value="CSS" /> CSS
+                            <input type="checkbox" name="skills" value="JS" /> JS
+                            <p class="error" id="skillsError"></p>
+
+                            <button type="submit" class="submitBtn">Update</button>
+                        </form>
+                    </article>
+                    <article class="card">
+                        <h2 class="title">Form Result</h2>
+                        <div id="output"></div>
+                        <button type="button" id="clearBtn">Clear Results</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="footer-info">
+                <p class="trademark">© <span id="year">2026</span> EOUS</p>
+                <p class="certified">SOC 2 Certified</p>
+            </div>
+        </footer>
+    </body>
+</html>
